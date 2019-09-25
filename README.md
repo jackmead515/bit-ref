@@ -70,15 +70,15 @@ x = 001011, 6 bits<br/>
 
 ### HOW MANY BITS ARE DIFFERENT BETWEEN TWO NUMBERS?
 
-```
+```python
 x = 0b001011
 y = 0b111001
 def how_many_different(x, y):
-  dif = 1
+  dif = 0
   z = x ^ y
   for i in range(6):
-    if (z>>i)&1=1
-      dif+=1
+    if (z>>i) & 1 = 1
+      dif += 1
   return dif
 
 (how_many_different(x, y) == 3) is True
